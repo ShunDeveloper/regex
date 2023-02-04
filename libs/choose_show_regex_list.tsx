@@ -40,7 +40,6 @@ const choose_show_regex_list = (
             show_regex_list = show_regex_list.concat(basic_regex_list)
         }
     }
-    console.log(show_regex_list)
     return show_regex_list
 }
 

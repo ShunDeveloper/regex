@@ -8,29 +8,13 @@ export default function Page() {
     const tags = create_unique_tag_list_from_regex_list(regex_list)
  
     return (
-        <div>
-            <Title />
-            <div className="grid grid-cols-4 p-[3%] px-[10%]">
-                <Content
-                    data = {regex_list}
-                />
-                <Sidebar
-                    tags = {tags}
-                />
-            </div>
-        </div>
-    )
-}
-
-const Title = () => {
-    return (
-        <div className='py-[2%] pl-[3%] bg-gray-800'>
-            <h1 className="text-gray-50 text-[30px]">
-                正規表現検索ページ
-            </h1>
-            <p className="text-gray-300">
-                正規表現をtagや文字列で検索することが出来るサイトです
-            </p>
+        <div className="MainContainer">
+            <Content
+                data = {regex_list}
+            />
+            <Sidebar
+                tags = {tags}
+            />
         </div>
     )
 }

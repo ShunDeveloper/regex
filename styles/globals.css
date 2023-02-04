@@ -5,3 +5,7 @@
 h3 {
   @apply text-gray-800 text-[24px] border-b-2 w-[80%];
 }
+
+.MainContainer {
+  @apply grid grid-cols-4 p-[3%] px-[10%];
+}
