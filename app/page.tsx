@@ -17,12 +17,10 @@ export default function Page() {
     const tags = create_unique_tag_list_from_regex_list(regex_list)
     const onClickLi = (value: string) => {}
     useEffect(() => {
-        // Update the document title using the browser API
         console.log(searchParams.get('tag'))
         const tmp = searchParams.get('tag')
         if (null !== tmp) {
             setChooseTags(tmp)
-            console.log(chooseTags)
         }
     });
  
