@@ -9,3 +9,6 @@ h3 {
 .MainContainer {
   @apply grid grid-cols-4 p-[3%] px-[10%];
 }
+.Card {
+  @apply rounded-lg py-[3%] pl-[3%] my-[1%] bg-gray-100 w-[80%];
+}
